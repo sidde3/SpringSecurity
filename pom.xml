@@ -120,5 +120,6 @@
     <modules>
         <module>spring-web-security</module>
         <module>keycloak-spring-security</module>
+        <module>spring-boot-saml</module>
     </modules>
 </project>

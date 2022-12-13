@@ -23,6 +23,7 @@ public class HomeController {
 
     private String getPrincipalName(){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        //SAMLCredential credential = (SAMLCredential) auth.getCredentials();
         DefaultSaml2AuthenticatedPrincipal principal = (DefaultSaml2AuthenticatedPrincipal) auth.getPrincipal();
         System.err.println(principal.getAttributes());
         return principal.getName();
